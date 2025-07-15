@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
+        .hero {
+            background: linear-gradient(120deg, #4f8cff 0%, #3358e0 100%);
+            color: #fff;
+            padding: 4rem 1rem 3rem 1rem;
+            text-align: center;
+        }
+        .hero h1 { margin: 0 0 1rem 0; font-size: 2.5rem; }
+        .hero p { font-size: 1.2rem; margin-bottom: 2rem; }
+        .cta-btn {
+            background: #fff;
+            color: #3358e0;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .cta-btn:hover { background: #e6e6e6; }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin: 3rem auto;
+            max-width: 900px;
+        }
+        .feature {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            padding: 2rem;
+            flex: 1 1 250px;
+            min-width: 250px;
+            max-width: 300px;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: #222;
+            color: #fff;
+            margin-top: 3rem;
+        }
+        @media (max-width: 700px) {
+            .features { flex-direction: column; gap: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>Welcome to My Landing Page</h1>
+        <p>Introduce your product, service, or yourself with a catchy headline and a short description.</p>
+        <button class="cta-btn" onclick="window.location='#contact'">Get Started</button>
+    </section>
+    <section class="features">
+        <div class="feature">
+            <h2>Feature One</h2>
+            <p>Describe a key benefit or feature here.</p>
+        </div>
+        <div class="feature">
+            <h2>Feature Two</h2>
+            <p>Highlight another important aspect or advantage.</p>
+        </div>
+        <div class="feature">
+            <h2>Feature Three</h2>
+            <p>Share what makes your offering unique.</p>
+        </div>
+    </section>
+    <footer id="contact">
+        <p>Contact: <a href="mailto:your@email.com" style="color:#fff;text-decoration:underline;">your@email.com</a></p>
+        <p>&copy; 2025 Your Name</p>
+    </footer>
+</body><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+        header { background: #222; color: #fff; padding: 2rem 1rem; text-align: center; }
+        main { max-width: 800px; margin: 2rem auto; background: #fff; padding: 2rem; border-radius: 8px; }
+        h1, h2 { margin-top: 0; }
+        .projects { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+        .project { background: #eee; padding: 1rem; border-radius: 6px; }
+        @media (max-width: 600px) {
+            .projects { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <p>Web Developer | Designer | Programmer</p>
+    </header>
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <p>
+                Brief introduction about yourself. Highlight your skills, experience, and what makes you unique.
+            </p>
+        </section>
+        <section>
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Project One</h3>
+                    <p>Short description of your project. What technologies did you use? What did you learn?</p>
+                </div>
+                <div class="project">
+                    <h3>Project Two</h3>
+                    <p>Short description of your project. What technologies did you use? What did you learn?</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        </section>
+    </main>
+</body>
+</html>
