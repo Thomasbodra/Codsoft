@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .quiz-box {
+      border: 2px solid #333;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: auto;
+    }
+    .question {
+      font-weight: bold;
+    }
+    .result {
+      margin-top: 20px;
+      font-size: 18px;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="quiz-box">
+    <h2>Simple Quiz</h2>
+
+    <form id="quizForm">
+      <p class="question">1. What is the capital of India?</p>
+      <label><input type="radio" name="q1" value="Delhi"> Delhi</label><br>
+      <label><input type="radio" name="q1" value="Mumbai"> Mumbai</label><br>
+      <label><input type="radio" name="q1" value="Kolkata"> Kolkata</label><br>
+      <label><input type="radio" name="q1" value="Chennai"> Chennai</label><br>
+
+      <br>
+      <button type="button" onclick="checkAnswers()">Submit</button>
+    </form>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <script>
+    function checkAnswers() {
+      const answer = document.querySelector('input[name="q1"]:checked');
+      const result = document.getElementById('result');
+
+      if (!answer) {
+        result.innerHTML = "Please select an answer.";
+        result.style.color = "red";
+        return;
+      }
+
+      if (answer.value === "Delhi") {
+        result.innerHTML = "Correct! 🎉";
+        result.style.color = "green";
+      } else {
+        result.innerHTML = "Wrong answer. 😢 Correct answer is Delhi.";
+        result.style.color = "red";
+      }
+    }
+  </script>
+
+</body>
+</html>
